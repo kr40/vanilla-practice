@@ -3,3 +3,4 @@
 //* All selectors
 
 export const switchThemeBtn = document.querySelector('.switchThemeBtn');
+export const theme = document.getElementsByTagName('link')[6];
