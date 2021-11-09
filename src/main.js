@@ -15,5 +15,3 @@ switchThemeBtn.addEventListener('click', function () {
 		? (switchThemeBtn.textContent = 'Dark 🌑')
 		: (switchThemeBtn.textContent = 'Light 💡');
 });
-
-//* Lecture
