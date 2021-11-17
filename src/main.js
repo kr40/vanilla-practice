@@ -27,4 +27,3 @@ function getDate() {
 }
 
 getDate();
-// test
