@@ -39,3 +39,29 @@ function getTime() {
 }
 
 getTime();
+
+class Person {
+	constructor(name, age) {
+		this.name = name;
+		this.age = age;
+	}
+
+	getGreeting() {
+		return `Hi, I am ${this.name}!`;
+	}
+
+	getDescription() {
+		return `${this.name} is ${this.age} year(s) old.`;
+	}
+}
+
+const john = new Person('John', 30);
+
+console.log(john);
+
+const kartik = new Person('Kartik', 28);
+
+console.log(kartik);
+
+kartik.getGreeting(); //?
+kartik.getDescription(); //?

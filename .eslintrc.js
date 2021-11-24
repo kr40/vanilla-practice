@@ -13,5 +13,6 @@ module.exports = {
 	rules: {
 		'require-jsdoc': 'off',
 		'no-unused-vars': 'warn',
+		'spaced-comment': 'off',
 	},
 };
