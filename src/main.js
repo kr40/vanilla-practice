@@ -65,3 +65,10 @@ console.log(kartik);
 
 kartik.getGreeting(); //?
 kartik.getDescription(); //?
+
+// Create an html paragraph element
+const p = document.createElement('p');
+// Add "hello world" to the paragraph
+p.textContent = 'Hello World';
+// Add the paragraph to the container class
+document.querySelector('.container').appendChild(p);
