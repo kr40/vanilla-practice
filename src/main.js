@@ -72,3 +72,22 @@ const p = document.createElement('p');
 p.textContent = 'Hello World';
 // Add the paragraph to the container class
 document.querySelector('.container').appendChild(p);
+
+// create a new class called subscriber which inherits from the person class
+class Subscriber extends Person {
+	constructor(name, age, newsLetter) {
+		super(name, age);
+		this.newsLetter = newsLetter;
+	}
+
+	getDescription() {
+		return `${this.name} is ${this.age} year(s) old and subscribed to ${this.newsLetter}`;
+	}
+}
+
+const kartik2 = new Subscriber('kartik');
+
+kartik2.age = 28;
+kartik2.newsLetter = 'The Daily Mail';
+
+kartik2.getDescription(); //?
