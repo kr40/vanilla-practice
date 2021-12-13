@@ -16,7 +16,6 @@ switchThemeBtn.addEventListener('click', function () {
 		: (switchThemeBtn.textContent = 'Light 💡');
 });
 
-// Write a function to get the latest date
 function getDate() {
 	const date = new Date();
 	const day = date.getDate();
@@ -28,11 +27,10 @@ function getDate() {
 
 getDate();
 
-// Write a function to get the latest time
 function getTime() {
 	const date = new Date();
 	const hours = date.getHours();
-	const minutes = date.getMinutes();
+	const minutes = date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes();
 	const seconds = date.getSeconds();
 
 	console.log(`${hours}:${minutes}:${seconds}`);
@@ -66,14 +64,10 @@ console.log(kartik);
 kartik.getGreeting(); //?
 kartik.getDescription(); //?
 
-// Create an html paragraph element
 const p = document.createElement('p');
-// Add "hello world" to the paragraph
 p.textContent = 'Hello World';
-// Add the paragraph to the container class
 document.querySelector('.container').appendChild(p);
 
-// create a new class called subscriber which inherits from the person class
 class Subscriber extends Person {
 	constructor(name, age, newsLetter) {
 		super(name, age);
@@ -91,3 +85,10 @@ kartik2.age = 28;
 kartik2.newsLetter = 'The Daily Mail';
 
 kartik2.getDescription(); //?
+
+const numbers = [1, 2, 3, 4, 5];
+function addArray(numbers) {
+	return numbers.reduce((acc, curr) => acc + curr);
+}
+
+console.log(addArray(numbers));
