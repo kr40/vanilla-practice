@@ -77,6 +77,14 @@ class Subscriber extends Person {
 	getDescription() {
 		return `${this.name} is ${this.age} year(s) old and subscribed to ${this.newsLetter}`;
 	}
+
+	get Age() {
+		return this.calcAge2020();
+	}
+
+	calcAge2020() {
+		return 2020 - this.age;
+	}
 }
 
 const kartik2 = new Subscriber('kartik');
@@ -92,3 +100,27 @@ function addArray(numbers) {
 }
 
 console.log(addArray(numbers));
+
+class Vampire {
+	constructor(location, weakness) {
+		this.location = location;
+		this.weakness = weakness;
+	}
+}
+
+const Dracula = new Vampire({
+	location: 'Transylvania',
+	weakness: ['Sunlight', 'Garlic'],
+});
+
+console.log(Dracula);
+
+function retro(rad) {
+	if (rad) {
+		alert('Wicked');
+	} else {
+		alert('Bogus');
+	}
+}
+
+retro(true);
