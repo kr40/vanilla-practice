@@ -114,13 +114,3 @@ const Dracula = new Vampire({
 });
 
 console.log(Dracula);
-
-function retro(rad) {
-	if (rad) {
-		alert('Wicked');
-	} else {
-		alert('Bogus');
-	}
-}
-
-retro(true);
