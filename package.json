@@ -1,0 +1,24 @@
+{
+	"name": "vanilla-practice",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"eslint": "^8.39.0",
+		"eslint-config-google": "^0.14.0",
+		"eslint-config-prettier": "^8.8.0",
+		"eslint-plugin-import": "^2.27.5",
+		"stylelint": "^15.6.1",
+		"stylelint-color-format": "^1.1.0",
+		"stylelint-config-rational-order": "^0.1.2",
+		"stylelint-config-recommended": "^12.0.0",
+		"stylelint-config-standard": "^33.0.0",
+		"stylelint-order": "^6.0.3",
+		"vite": "^4.3.2"
+	}
+}
